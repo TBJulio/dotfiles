@@ -76,7 +76,7 @@
 
 /* URL bar */
 #urlbar {
-  background: #FFFFFF !important;
+  background: #FF0000 !important;
   outline: none !important;
   border-top: 2px solid #000000 !important;
   border-left: 2px solid #000000 !important;
@@ -149,7 +149,7 @@
   width: 22px !important;
   height: 22px !important;
   margin: 0 !important;
-  padding: 0 !important;/**/
+  padding: 10px !important;/**/
 }
 
 /* Hover effect on active tab's close button */
@@ -232,8 +232,8 @@
 }
 
 /* Inside bookmarks folder */
-menupopup menuitem
-/*menupopup menuitem:hover*/ { /**/
+menupopup menuitem,
+menupopup menuitem:hover { /**/
   margin: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
@@ -241,10 +241,20 @@ menupopup menuitem
 
 .menupopup-arrowscrollbox {
   background: #C0C0C0 !important;
+  color: #000000 !important;
   border: 0 !important;
   border-radius: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
+  box-shadow: none !important;
+}
+
+menupopup menu[_moz-menuactive="true"],
+menupopup menuitem:hover
+/*menupopup menu:hover*/ {
+  background-color: #000080 !important;
+  color: #FFFFFF !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
 }
 
@@ -297,3 +307,56 @@ toolbar .toolbaritem-combined-buttons {
 #PersonalToolbar {
   --toolbarbutton-inner-padding: 8px !important;
 }
+
+#urlbar-background {
+  background: #FFFFFF !important;
+  animation: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important; 
+  border: 0 !important;
+  box-shadow: 0 !important;
+}
+
+.urlbarView-row {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.urlbarView-row:hover {
+  background: #000080 !important;
+  color: #FFFFFF !important;
+}
+
+.urlbarView {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: 0 !important;
+  background: #C0C0C0 !important;
+  border: 0 !important;
+  /*border-top: 0 !important;
+  border-left: 2px solid #000000 !important;
+  border-bottom: 2px solid #FF0000 !important;
+  border-right: 2px solid #FF0000 !important;*/
+  border-radius: 0 !important;
+  --urlbarView-item-inline-padding: 0 !important;
+  --urlbarView-item-block-padding: 0 !important;
+  --urlbarView-labeled-row-label-top: 0 !important;
+  --urlbar-container-padding: 0 !important;
+  --urlbarView-results-padding: 0 !important;
+}
+
+/* Center bookmark, wip */
+/*#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: safe center !important;
+}*/
+
+/*:host(.in-menulist) arrowscrollbox::part(scrollbox) {
+  overflow: none;
+  overscroll-behavior: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #C0C0C0 !important;
+}*/

@@ -45,3 +45,6 @@ about:support
 "Profile Directory" > "Open Directory"
 mkdir ~/.mozilla/firefox/(profile)/chrome
 touch userChrome.css
+
+#togle line numbers in nano
+Alt + N
