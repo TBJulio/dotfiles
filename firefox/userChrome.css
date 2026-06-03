@@ -305,7 +305,7 @@ panelview {
 
 #personal-toolbar-empty-description,
 toolbarbutton.bookmark-item:not(.subviewbutton) {
-  margin-inline: 0px !important; /**/
+  margin-inline: 0 !important;
   margin-block: 0 !important;
 }
 
