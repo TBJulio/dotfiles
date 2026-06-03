@@ -723,6 +723,7 @@ drawbar(Monitor *m)
 	int boxw = drw->fonts->h / 6 + 2;
 	unsigned int i, occ = 0, urg = 0;
 	Client *c;
+	const Client *sel = m->sel;
 
 	if (!m->showbar)
 		return;
@@ -744,10 +745,18 @@ drawbar(Monitor *m)
 		w = TEXTW(tags[i]);
 		drw_setscheme(drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeTagsSel : SchemeTagsNorm]);
 		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
-		if (occ & 1 << i)
-			drw_rect(drw, x + boxs, boxs, boxw, boxw,
-				m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
-				urg & 1 << i);
+
+		if (sel && sel->tags & (1 << i)) {
+			XSetLineAttributes(dpy, drw->gc, 2, LineSolid, CapButt, JoinMiter);
+			XSetForeground(dpy, drw->gc, BlackPixel(dpy, screen));
+			XDrawLine(dpy, drw->drawable, drw->gc, x, 0, x + w, 0);
+			XDrawLine(dpy, drw->drawable, drw->gc, x, 0, x, bh);
+			XSetForeground(dpy, drw->gc, WhitePixel(dpy, screen));
+			XDrawLine(dpy, drw->drawable, drw->gc, x, bh - 1, x + w, bh - 1);
+			XDrawLine(dpy, drw->drawable, drw->gc, x + w - 1, 0, x + w - 1, bh);
+			XSetLineAttributes(dpy, drw->gc, 1, LineSolid, CapButt, JoinMiter);
+		}
+
 		x += w;
 	}
 	w = TEXTW(m->ltsymbol);

@@ -27,9 +27,9 @@ static const char *colors[][4]      = {
 			       /* text,      bg,         border,     float */
 	[SchemeNorm]      = { col_black, col_blue,   col_blue,  col_silver }, // window unselected
 	[SchemeSel]       = { col_black, col_blue,   col_blue,  col_blue2 },  // window selected
-	[SchemeTagsNorm]  = { col_black, col_gray5,  col_black, col_silver }, // tagbar unselected
+	[SchemeTagsNorm]  = { col_black, col_silver, col_black, col_silver }, // tagbar unselected
 	[SchemeTagsSel]   = { col_white, col_blue,   col_black, col_blue },   // tagbar selected
-	[SchemeInfoNorm]  = { col_white, col_gray5,  col_black, col_silver }, // infobar unselected
+	[SchemeInfoNorm]  = { col_white, col_silver, col_black, col_silver }, // infobar unselected
 	[SchemeInfoSel]   = { col_black, col_silver, col_black, col_blue },   // infobar selected
 	[SchemeStatus]    = { col_black, col_silver, col_black, col_silver }, // sltatus bar
 };
@@ -166,7 +166,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            	{.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       	{.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       	{.i = +1 } },
-a	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         	{.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         	{.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         	{.i = +1 } },
 	TAGKEYS(                        XK_1,                      	0)
 	TAGKEYS(                        XK_2,                      	1)
