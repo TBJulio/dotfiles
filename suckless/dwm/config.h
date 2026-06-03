@@ -96,7 +96,7 @@ static const char *screenshotcmd[]		= { "sh","-c","scrot -e 'mv $f ~/screenshots
 static const char *screenshotselectcmd[]	= { "sh","-c","scrot -s -e 'mv $f ~/screenshots/'", NULL };
 static const char *musiccmd[]			= { "spotify", NULL };
 
-#define SCRIPTS_DIR "~/.dotfiles/scripts/"
+#define SCRIPTS_DIR "/mnt/hdd3/dotfiles/scripts/"
 /* click on tag (format: { script, search_string, launch_command, NULL }) */
 static const char *firefoxt[]	= { "sh","-c",SCRIPTS_DIR"check_and_launch.sh firefox firefox", NULL };
 static const char *codet[]	= { "sh","-c",SCRIPTS_DIR"check_and_launch.sh code code", NULL };
@@ -145,7 +145,7 @@ static const Key keys[] = {
 					/* ↑ XK_p */
 	{ MODKEY,             		XK_z, 	   spawn,          	{.v = termcmd } },
 	     /* ↑ |ShiftMask */         /* ↑ XK_Return */
-	{ MODKEY,                       XK_a,  togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY,                       XK_a,      togglescratch,       {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      	{0} },
 	{ MODKEY,                       XK_j,      focusstack,     	{.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     	{.i = -1 } },
@@ -166,7 +166,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            	{.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       	{.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       	{.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         	{.i = -1 } },
+a	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         	{.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         	{.i = +1 } },
 	TAGKEYS(                        XK_1,                      	0)
 	TAGKEYS(                        XK_2,                      	1)
