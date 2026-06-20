@@ -2,7 +2,6 @@
 alacritty
 bluez
 bluez-tools
-btrfs-progs
 build-essential
 chafa
 cron
@@ -11,13 +10,11 @@ ddclient
 discord
 dunst
 fail2ban
-fastfetch
 feh
 findutils
 fonts-font-awesome
 fonts-inconsolata
 fonts-noto
-gcc-14-base
 git
 golang-go
 gpick
@@ -29,9 +26,7 @@ libx11-dev
 libxft-dev
 libxinerama-dev
 localsend
-nano
 nginx
-nvidia-driver
 openssh-client
 openssh-server
 pavucontrol
@@ -51,3 +46,6 @@ ufw
 unzip
 vlc
 wget
+wmctrl
+x11-xserver-utils
+xinit

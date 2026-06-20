@@ -11,6 +11,7 @@ dunst
 fail2ban
 feh
 firefox
+gpick
 jellyfin-server
 jellyfin-web
 keepassxc
