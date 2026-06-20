@@ -6,7 +6,7 @@
 		}
 	},
 	"logo":{
-		"source":"~/.dotfiles/fastfetch/tehepero1.txt",
+		"source":"~/.dotfiles/fastfetch/tehepero.txt",
 		"color": {
 			"1": "38;2;255;0;0" //neon red #FF0000
 		}
