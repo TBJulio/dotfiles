@@ -40,7 +40,7 @@ else
 	exit 1
 fi
 
-DOTFILES="/home/$USER/.dotfiles"
+DOTFILES="$HOME/.dotfiles"
 
 #packages
 case "$OS" in
