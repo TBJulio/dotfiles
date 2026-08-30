@@ -7,6 +7,8 @@ chafa
 code
 ddclient
 discord
+docker
+docker-compose
 dunst
 fail2ban
 feh
@@ -22,6 +24,7 @@ nginx
 nginx-mod-headers-more
 noto-fonts
 noto-fonts-cjk
+nvidia-container-toolkit
 openssh
 pavucontrol
 picom

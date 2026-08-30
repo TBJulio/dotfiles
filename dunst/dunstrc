@@ -15,7 +15,7 @@
 	progress_bar_frame_width = 1
 	progress_bar_min_width = 150
 	progress_bar_max_width = 300
-	progress_bar_corner_radius = 10
+	progress_bar_corner_radius = 0
 	progress_bar_corners = all
 	icon_corner_radius = 10
 	icon_corners = all
@@ -26,7 +26,7 @@
 	horizontal_padding = 10
 	text_icon_padding = 0
 	frame_width = 1
-	frame_color = "#aaaaaa"
+	frame_color = "#000000"
 	gap_size = 0
 	separator_color = frame
 	sort = yes
@@ -63,19 +63,21 @@
 	always_run_script = true
 	title = Dunst
 	class = Dunst
-	corner_radius = 10
+	corner_radius = 0
 	corners = all
 	ignore_dbusclose = false
 
 [urgency_low]
-	background = "#222222"
-	foreground = "#888888"
+	background = "#C0C0C0"
+	foreground = "#000000"
+	highlight = "#000080"
 	timeout = 10
 	default_icon = dialog-information
 
 [urgency_normal]
-	background = "#285577"
-	foreground = "#ffffff"
+	background = "#C0C0C0"
+	foreground = "#000000"
+	highlight = "#000080"
 	timeout = 10
 	override_pause_level = 30
 	default_icon = dialog-information

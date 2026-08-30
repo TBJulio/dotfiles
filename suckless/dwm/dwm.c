@@ -744,7 +744,7 @@ drawbar(Monitor *m)
 	for (i = 0; i < LENGTH(tags); i++) {
 		w = TEXTW(tags[i]);
 		drw_setscheme(drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeTagsSel : SchemeTagsNorm]);
-		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
+		drw_text(drw, x, 0, w, bh, lrpad / 2.75, tags[i], urg & 1 << i);
 
 		if (sel && sel->tags & (1 << i)) {
 			XSetLineAttributes(dpy, drw->gc, 2, LineSolid, CapButt, JoinMiter);

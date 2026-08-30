@@ -1,0 +1,410 @@
+:root {
+  --toolbarbutton-hover-background: transparent !important;
+  --toolbarbutton-active-background: transparent !important;
+}
+
+/* Tab list's backgound */
+#navigator-toolbox {
+  background-color: #C0C0C0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Toolbar's buttons */
+.toolbarbutton-1 {
+  background: #C0C0C0 !important;
+
+  border-style: solid !important;
+  border-width: 2px !important;
+
+  border-top-color: #FFFFFF !important;
+  border-left-color: #FFFFFF !important;
+  border-bottom-color: #000000 !important;
+  border-right-color: #000000 !important;
+  --toolbarbutton-background-color-hover: none !important;
+  --toolbarbutton-background-color-active: none !important;
+
+}
+
+.toolbarbutton-1:hover {
+  background: #808080 !important;
+}
+
+.toolbarbutton-1:active {
+  border-top-color: #000000 !important;
+  border-left-color: #000000 !important;
+  border-bottom-color: #FFFFFF !important;
+  border-right-color: #FFFFFF !important;
+}
+
+/* Tab's format */
+.tab-background {
+  background-color: #C0C0C0 !important;
+  border-top: 2px solid #FFFFFF !important;
+  border-left: 2px solid #FFFFFF !important;
+  border-bottom: 2px solid #000000 !important;
+  border-right: 2px solid #000000 !important;
+
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Space between tabs */
+.tabbrowser-tab {
+  margin-inline: 0 !important;
+  padding-inline: 0 !important;
+  border: 0 !important;
+  color: #000000 !important;
+}
+
+/* Selected tab text */
+.tabbrowser-tab[selected] .tab-label {
+  color: #FFFFFF !important;
+}
+
+/* Selected tab background */
+.tabbrowser-tab[selected] .tab-background {
+  background-color: #000080 !important;
+  border-top: 2px solid #000000 !important;
+  border-left: 2px solid #000000 !important;
+  border-bottom: 2px solid #FFFFFF !important;
+  border-right: 2px solid #FFFFFF !important;
+}
+
+/* Selected tab favicon, for better readability */
+.tabbrowser-tab[selected] .tab-icon-image {
+  filter: drop-shadow(0px 0px 1px white) !important;
+}
+
+/* URL bar */
+#urlbar {
+  background: #FFFFFF !important;
+  outline: none !important;
+  border-top: 2px solid #000000 !important;
+  border-left: 2px solid #000000 !important;
+  border-bottom: 2px solid #808080 !important;
+  border-right: 2px solid #808080 !important;
+  color: #000000 !important;
+  --urlbar-box-bgcolor: transparent !important;
+}
+
+/* Area around URL bar */
+#urlbar,
+#urlbar-container {
+  box-shadow: none !important;
+}
+
+#urlbar-container,
+#nav-bar-customization-target {
+  background: #C0C0C0 !important; /**/
+}
+
+.urlbar-input-container {
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  background: #FFFFFF !important;
+}
+
+#identity-icon-box { /**/
+  border-radius: 0 !important;
+  background: #FFFFFF !important;
+}
+
+/* Toolbar icons color */
+.toolbarbutton-icon {
+  fill: #000000 !important;
+  color: #000000 !important;
+}
+
+/* Tabs close icon */
+.tab-close-button {
+  background: transparent !important;
+  fill: #000000 !important;
+  color: #000000 !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 2px !important;
+  padding: 0 !important;
+}
+
+/* Close button on active tab */
+.tabbrowser-tab[selected] .tab-close-button {
+  background: transparent !important;
+  fill: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+/* Hover effect on active tab background */
+.tabbrowser-tab[selected]:hover .tab-background {
+  background-color: #0000C0 !important;
+}
+
+/* Tabs hover effect background */
+.tabbrowser-tab:hover .tab-background {
+  background-color: #808080 !important;
+}
+
+.tab-close-button:hover,
+.tab-close-button:active {
+  border-top: 2px solid #FFFFFF !important;
+  border-left: 2px solid #FFFFFF !important;
+  border-bottom: 2px solid #000000 !important;
+  border-right: 2px solid #000000 !important;
+  border-radius: 0 !important;
+  background: #C0C0C0 !important;
+  fill: #000000 !important;
+  width: 22px !important;
+  height: 22px !important;
+  margin: 0 !important;
+  padding: 0px !important;
+}
+
+/* Hover effect on active tab's close button */
+.tabbrowser-tab[selected] .tab-close-button:hover,
+.tabbrowser-tab[selected] .tab-close-button:active {
+  border-top: 2px solid #FFFFFF !important;
+  border-left: 2px solid #FFFFFF !important;
+  border-bottom: 2px solid #000000 !important;
+  border-right: 2px solid #000000 !important;
+  border-radius: 0 !important;
+  background: #C0C0C0 !important;
+  fill: #000000 !important;
+  width: 22px !important;
+  height: 22px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Transsition animation */
+/** {
+  transition: all 0.3s ease !important;
+}*/
+
+/* Except tab close button */
+/*.tab-close-button {
+  transition: none !important;
+}*/
+
+/* New tab's "+" icon */
+#tabs-newtab-button .toolbarbutton-icon {
+  fill: #000000 !important;
+  color: #000000 !important;
+  transform: scale(1.25) !important;
+}
+
+/* Bookmarks toolbar background */
+#PersonalToolbar {
+  background: #C0C0C0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* Bookmark text color */
+#PersonalToolbar .toolbarbutton-text {
+  color: #000000 !important;
+}
+
+/* Bookmark icons color */
+#PersonalToolbar .toolbarbutton-icon {
+  fill: #000000 !important;
+}
+
+/* Bookmarks */
+.bookmark-item {
+  border: 2px solid transparent !important;
+  border-radius: 0 !important;
+  color: #000000 !important;
+}
+
+.bookmark-item:hover {
+  background-color: #000080 !important;
+  color: #FFFFFF !important;
+}
+
+.bookmark-item:active {
+  border-top: 2px solid #000000 !important;
+  border-left: 2px solid #000000 !important;
+  border-bottom: 2px solid #FFFFFF !important;
+  border-right: 2px solid #FFFFFF !important;
+}
+
+#PersonalToolbar .bookmark-item:hover .toolbarbutton-text {
+  color: #FFFFFF !important;
+}
+
+#PersonalToolbar .bookmark-item:hover .toolbarbutton-icon {
+  fill: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+/* Inside bookmarks folder */
+/*menupopup menu,
+menupopup menuitem {
+  margin: 0 !important;
+  margin-inline: 4px !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}*/
+
+menupopup,
+menupopup > .panel-arrow,
+menupopup .arrowpanel,
+menupopup .panel-arrow,
+menupopup .panel-shadow {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: 0 !important;
+  border: 0 !important;
+  /* -moz-appearance: none !important; */
+}
+
+menupopup > .panel-arrow,
+menupopup .panel-arrow,
+menupopup .arrowpanel .panel-arrow {
+  display: 0 !important;
+  visibility: collapse !important;
+}
+
+menupopup,
+menupopup > vbox,
+menupopup > hbox,
+menupopup > .panelview {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+menupopup menu,
+menupopup menuitem,
+menupopup .menuitem-iconic,
+menupopup .menuitem-iconic .menu-iconic-left {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  margin-inline: 0 !important;
+}
+
+.menupopup-arrowscrollbox {
+  background: #C0C0C0 !important;
+  color: #000000 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+menupopup menu[_moz-menuactive="true"],
+menupopup menuitem:hover,
+menupopup menu:hover { /**/
+  background-color: #000080 !important;
+  color: #FFFFFF !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Hamburger menu */
+panelview {
+  background-color: #C0C0C0 !important;
+  color: #000000 !important;
+}
+
+#personal-toolbar-empty-description,
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+  margin-inline: 0 !important;
+  margin-block: 0 !important;
+}
+
+toolbar .toolbarbutton-1 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#PersonalToolbar .toolbarbutton-1 {
+  margin-block: 0 !important;
+}
+
+:root {
+  --tab-min-height: 32px !important;
+}
+
+.tabbrowser-tab[selected] {
+  max-height: 40px !important;
+  min-height: 40px !important;  
+}   
+tab:not([selected]) {
+  max-height: 40px !important;
+  min-height: 40px !important;  
+}
+
+#tabs-newtab-button,
+#alltabs-button {
+  min-height: 40px !important;
+  max-height: 40px !important;
+}
+
+toolbar .toolbaritem-combined-buttons {
+  margin: 0 !important;
+  padding: 0 !important;
+  align-items: stretch !important;
+}
+
+#PersonalToolbar {
+  --toolbarbutton-inner-padding: 8px !important;
+}
+
+#urlbar-background {
+  background: #FFFFFF !important;
+  animation: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important; 
+  border: 0 !important;
+  box-shadow: 0 !important;
+}
+
+.urlbarView-row {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.urlbarView-row:hover {
+  background: #000080 !important;
+  color: #FFFFFF !important;
+}
+
+.urlbarView {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: 0 !important;
+  background: #C0C0C0 !important;
+  border: 0 !important;
+  /*border-top: 0 !important;
+  border-left: 2px solid #000000 !important;
+  border-bottom: 2px solid #FF0000 !important;
+  border-right: 2px solid #FF0000 !important;*/
+  border-radius: 0 !important;
+  --urlbarView-item-inline-padding: 0 !important;
+  --urlbarView-item-block-padding: 0 !important;
+  --urlbarView-labeled-row-label-top: 0 !important;
+  --urlbar-container-padding: 0 !important;
+  --urlbarView-results-padding: 0 !important;
+}
+
+/* Center bookmark, wip */
+/*#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: safe center !important;
+}*/
+
+/*:host(.in-menulist) arrowscrollbox::part(scrollbox) {
+  overflow: none;
+  overscroll-behavior: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #C0C0C0 !important;
+}*/

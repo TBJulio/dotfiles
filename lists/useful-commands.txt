@@ -48,3 +48,6 @@ touch userChrome.css
 
 #togle line numbers in nano
 Alt + N
+
+#open terminal here command for thunar
+alacritty --title scratchpad --option window.dimensions.columns=120 --option window.dimensions.lines=34 %d

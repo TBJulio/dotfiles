@@ -12,3 +12,11 @@ bluetoothctl trust $MACA
 bluetoothctl connect $MACA
 
 pactl list modules | grep bluetooth
+
+---------------------------------------------------------
+
+sudo nano /etc/pulse/default.pa
+
+(CTRL+F load-module module-bluetooth-discover)
+
+load-module module-bluetooth-discover avrcp_absolute_volume=false

@@ -1,0 +1,18 @@
+[window]
+opacity = 1
+padding = { x = 0, y = 0 }
+
+[font]
+size = 15
+
+[font.normal]
+family = "LessPerfectDOSVGA"
+style  = "Regular"
+
+[colors.primary]
+background = '#000000'
+foreground = '#FFFFFF'
+
+[colors.cursor]
+text   = '#000000'
+cursor = '#000000'
